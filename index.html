@@ -1413,7 +1413,7 @@ const AA_HEADERS = {
 };
 
 // Crea el control con los encabezados
-const controlCapas = L.control.layers(capas, AA_HEADERS, {collapsed:false, position:'topleft'}).addTo(map);
+const controlCapas = L.control.layers(capas, AA_HEADERS, {collapsed:true, position:'topleft'}).addTo(map);
 
 // Oculta checkbox de los encabezados y desactiva interacción
 function beautifyHeadings(){
@@ -2065,3 +2065,4 @@ construirInicial();
 </script>
 </body>
 </html>
+
