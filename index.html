@@ -1330,7 +1330,7 @@ map.on('popupclose', (ev) => {
 
 /* ================== INCENTIVOS (INAB) ================== */
 const incentivos = L.esri.featureLayer({
-  url: 'https://sig.inab.gob.gt/server/rest/services/Hosted/Incentivos_Forestales_INAB_Vista/FeatureServer/0',
+  url: 'https://sig.inab.gob.gt/server/rest/services/Hosted/Incentivos_Forestales_1998_2020/FeatureServer',
   style: () => ({ color: '#EBF527', weight: 1, fillOpacity: 0.2, dashArray: '3,3' }),
   onEachFeature: (f, layer) => {
     const p = f.properties || {};
@@ -2065,5 +2065,6 @@ construirInicial();
 </script>
 </body>
 </html>
+
 
 
